@@ -1,3 +1,4 @@
+import 'package:dt917628579_a1_f24/Battery/batteryindicator';
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
@@ -11,7 +12,7 @@ class Map_App extends StatelessWidget {
    return Scaffold(
     appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.primaryFixedDim,
-        title: const Text('Map'),
+        title: BatteryIndicator(),
         actions: const [
           SignOutButton(),
         ],

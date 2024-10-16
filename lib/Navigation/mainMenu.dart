@@ -1,3 +1,4 @@
+import 'package:dt917628579_a1_f24/Battery/batteryindicator';
 import 'package:dt917628579_a1_f24/MenuScreens/Camera.dart';
 import 'package:dt917628579_a1_f24/MenuScreens/Emergency.dart';
 import 'package:dt917628579_a1_f24/MenuScreens/Help.dart';
@@ -39,7 +40,6 @@ class FirstRoute extends StatefulWidget {
     }
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,6 +50,7 @@ class FirstRoute extends StatefulWidget {
 
         actions: const [
           SignOutButton(),
+          BatteryIndicator(),
         ],
 
       ),

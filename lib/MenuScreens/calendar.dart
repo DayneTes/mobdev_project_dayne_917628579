@@ -1,3 +1,4 @@
+import 'package:dt917628579_a1_f24/Battery/batteryindicator';
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
@@ -12,7 +13,7 @@ class Calendar extends StatelessWidget {
    return Scaffold(
     appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.primaryFixedDim,
-        title: const Text('Calendar'),
+        title: BatteryIndicator(),
         actions: const [
           SignOutButton(),
         ],

@@ -1,3 +1,4 @@
+import 'package:dt917628579_a1_f24/Battery/batteryindicator';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 
@@ -33,7 +34,8 @@ class _CameraAppState extends State<CameraApp> {
  @override
  Widget build(BuildContext context) {
       return Scaffold(
-      appBar: AppBar(title: const Text('Camera App')),
+      appBar: AppBar(
+        title: BatteryIndicator()),
       body: cameraController == null || !cameraController!.value.isInitialized
           ? const Center(child: CircularProgressIndicator())
           : CameraPreview(cameraController!),
