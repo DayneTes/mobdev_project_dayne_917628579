@@ -1,4 +1,4 @@
-import 'package:dt917628579_a1_f24/Battery/batteryindicator';
+import 'package:dt917628579_a1_f24/Battery/batteryindicator.dart';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 
