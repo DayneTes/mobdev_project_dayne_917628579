@@ -1,12 +1,13 @@
 import 'package:dt917628579_a1_f24/Battery/batteryindicator.dart';
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_map/flutter_map.dart';
-import 'package:latlong2/latlong.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+class MapApp extends StatelessWidget {
+  final LatLng _center = const LatLng(33.569664388, -85.108832898);
 
-class Map_App extends StatelessWidget {
- const Map_App({super.key});
+ const MapApp({super.key});
+
  @override
  Widget build(BuildContext context) {
    return Scaffold(
@@ -17,24 +18,8 @@ class Map_App extends StatelessWidget {
           SignOutButton(),
         ],
     ),
-    
-      body: Stack(
-        children: [
-          FlutterMap(
-            options: MapOptions(
-              initialCenter: LatLng(33.748997, -84.387985),
-              initialZoom: 8,
-            ),
-            children: [
-              TileLayer(
-                  urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-                  userAgentPackageName: 'com.example.app',
-              ),
-            ],
-          ),
-        ],
-      ),
-
-   );   
+    body: GoogleMap(initialCameraPosition: CameraPosition(target: _center, zoom: 11.0),
+   ),
+   );
  }
 }

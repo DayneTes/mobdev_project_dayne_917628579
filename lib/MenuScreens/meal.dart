@@ -1,4 +1,7 @@
 import 'package:dt917628579_a1_f24/Battery/batteryindicator.dart';
+import 'package:dt917628579_a1_f24/Meal/breakfast.dart';
+import 'package:dt917628579_a1_f24/Meal/dinner.dart';
+import 'package:dt917628579_a1_f24/Meal/lunch.dart';
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -32,7 +35,12 @@ class Meal extends StatelessWidget {
                   ),
                 ),
               ),
-              onPressed: null,
+              onPressed: () {
+                Navigator.push(context,
+                 MaterialPageRoute(builder: (context) => Breakfast()
+                 ),
+                 );
+              },
               child: const Text('Breakfast',
             style: TextStyle(
               fontSize: 30
@@ -51,7 +59,12 @@ class Meal extends StatelessWidget {
                   ),
                 ),
               ),
-              onPressed: null,
+              onPressed: () {
+                Navigator.push(context,
+                 MaterialPageRoute(builder: (context) => Lunch()
+                 ),
+                 );
+              },
               child: const Text('Lunch',
             style: TextStyle(
               fontSize: 30
@@ -70,7 +83,12 @@ class Meal extends StatelessWidget {
                   ),
                 ),
               ),
-              onPressed: null,
+              onPressed: () {
+                Navigator.push(context,
+                 MaterialPageRoute(builder: (context) => Dinner()
+                 ),
+                 );
+              },
               child: const Text('Dinner',
             style: TextStyle(
               fontSize: 30
