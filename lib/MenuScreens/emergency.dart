@@ -85,7 +85,7 @@ class Emergency extends StatelessWidget {
                     ),
                     behavior: SnackBarBehavior.floating,
                     margin: EdgeInsets.only(
-                        top: 0, left: 10, right: 10, bottom: 850),
+                        top: 0, left: 10, right: 10, bottom: 800),
                   ));
                 },
                 child: const Text(

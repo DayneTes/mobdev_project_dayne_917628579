@@ -21,7 +21,7 @@ class Help extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 10.0),
             child: SizedBox(
               width: double.infinity,
-              height: 270,
+              height: 220,
               child: ElevatedButton(
                 style: ButtonStyle(
                   shape: WidgetStatePropertyAll(
@@ -41,7 +41,7 @@ class Help extends StatelessWidget {
                     ),
                     behavior: SnackBarBehavior.floating,
                     margin: EdgeInsets.only(
-                        top: 0, left: 10, right: 10, bottom: 850),
+                        top: 0, left: 10, right: 10, bottom: 800),
                   ));
                 },
                 child: Text(

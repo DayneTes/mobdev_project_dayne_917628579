@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 class RemoteService {
   Future<List<Meals>?> getMeals() async {
     var client = http.Client();
-    var uri = Uri.parse('http://localhost:8080/api/v1/meal/');
+    var uri = Uri.parse('http://10.0.0.137:8080/api/v1/meal/');
 
     var response = await client.get(uri);
 
@@ -20,7 +20,7 @@ class RemoteService {
 
   Future<List<Meals>?> getBreakfast() async {
     var client = http.Client();
-    var uri = Uri.parse('http://localhost:8080/api/v1/meal/breakfast');
+    var uri = Uri.parse('http://10.0.0.137:8080/api/v1/meal/breakfast');
 
     var response = await client.get(uri);
 
@@ -35,7 +35,7 @@ class RemoteService {
 
   Future<List<Meals>?> getLunch() async {
     var client = http.Client();
-    var uri = Uri.parse('http://localhost:8080/api/v1/meal/lunch');
+    var uri = Uri.parse('http://10.0.0.137:8080/api/v1/meal/lunch');
 
     var response = await client.get(uri);
 
@@ -50,7 +50,7 @@ class RemoteService {
 
   Future<List<Meals>?> getDinner() async {
     var client = http.Client();
-    var uri = Uri.parse('http://localhost:8080/api/v1/meal/dinner');
+    var uri = Uri.parse('http://10.0.0.137:8080/api/v1/meal/dinner');
 
     var response = await client.get(uri);
 
@@ -65,7 +65,7 @@ class RemoteService {
 
   void orderMeal(String name, String type, int combo) async {
     var client = http.Client();
-    var full = 'http://localhost:8080/api/v1/meal/$type/$combo?name=$name';
+    var full = 'http://10.0.0.137:8080/api/v1/meal/$type/$combo?name=$name';
 
     var uri = Uri.parse(full);
 
@@ -82,7 +82,7 @@ class RemoteService {
 
   void sendHelp(String type, String user) async {
     var client = http.Client();
-    var full = 'http://localhost:8080/api/v1/help';
+    var full = 'http://10.0.0.137:8080/api/v1/help';
     var helpRequest = HelpRequest(requestedBy: user, type: type);
 
     String requestBody = helpRequestToJson(helpRequest);

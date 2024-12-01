@@ -26,7 +26,7 @@ class Meal extends StatelessWidget {
       
           SizedBox(
             width: double.infinity,
-            height: 297,
+            height: 270,
             child: ElevatedButton(
               style: ButtonStyle(
                 shape: WidgetStatePropertyAll(
@@ -50,7 +50,7 @@ class Meal extends StatelessWidget {
 
            SizedBox(
             width: double.infinity,
-            height: 297,
+            height: 270,
             child: ElevatedButton(
               style: ButtonStyle(
                 shape: WidgetStatePropertyAll(
@@ -74,7 +74,7 @@ class Meal extends StatelessWidget {
 
            SizedBox(
             width: double.infinity,
-            height: 297,
+            height: 270,
             child: ElevatedButton(
               style: ButtonStyle(
                 shape: WidgetStatePropertyAll(

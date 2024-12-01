@@ -60,7 +60,7 @@ class _BreakfastState extends State<Breakfast> {
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 16.0, vertical: 45),
+                          horizontal: 16.0, vertical: 35),
                       child: ElevatedButton(
                         onPressed: () {
                           RemoteService()
@@ -74,7 +74,7 @@ class _BreakfastState extends State<Breakfast> {
                             ),
                             behavior: SnackBarBehavior.floating,
                             margin: EdgeInsets.only(
-                                top: 0, left: 10, right: 10, bottom: 850),
+                                top: 0, left: 10, right: 10, bottom: 800),
                           ));
                         },
                         style: ElevatedButton.styleFrom(
